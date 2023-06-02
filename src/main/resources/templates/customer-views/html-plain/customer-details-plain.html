@@ -1,0 +1,72 @@
+<!-- Code block header starts -->
+<div class="container mx-auto max-w-2xl">
+    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-4 border-b border-bl">
+        <div>
+            <h4 class="text-2xl font-bold leading-tight text-gray-800">Customer Details</h4>
+
+        </div>
+
+    </div>
+</div>
+<!-- Code block header end -->
+<div class="container mx-auto max-w-2xl">  <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="mt-5 md:mt-0 md:col-span-3">
+        <form action="#" method="POST">
+            <div class="shadow overflow-hidden sm:rounded-md">
+                <div class="px-4 py-5 bg-white sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first_name" class="block text-sm  text-gray-400">First name</label>
+                            <input id ="first_name" type="text"
+                                   class="block py-2 px-1 w-full  text" disabled />
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last_name" class="block text-sm  text-gray-400">Last name</label>
+                            <input id ="last_name" type="text"
+                                   class="block py-2 px-1 w-full  text" disabled/>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="email" class="block text-sm  text-gray-400">Email</label>
+                            <input id ="email" type="text"
+                                   class="block py-2 px-1 w-full  text" disabled/>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone" class="block text-sm  text-gray-400">Phone</label>
+                            <input id ="phone" type="text"
+                                   class="block py-2 px-1 w-full  text" disabled/>
+                        </div>
+
+                        <div class="col-span-3 sm:col-span-3" >
+                            <label for="zipcode" class="block text-sm  text-gray-400">Zip Code</label>
+                            <input id ="zipcode" type="text"
+                                   class="block py-2 px-1 w-full  text " disabled/>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="country" class="block text-sm  text-gray-400">Country / Region</label>
+                            <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" disabled>
+                                <option>Albania</option>
+                                <option>Kosovo</option>
+                                <option>North Macedonia</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-6">
+                            <label for="street_address" class="block text-sm  text-gray-400">Street address</label>
+                            <input th:field="*{phone}" type="text"
+                                   class="block py-2 px-1 w-full  text " disabled />
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                 <button th:type="submit"  class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-full">
+               Submit</button>
+                </div> -->
+            </div>
+        </form>
+    </div>
+</div>
+</div>

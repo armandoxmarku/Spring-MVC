@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="pageHeadingFragment(title,buttonEnable, link)" class="container mx-auto max-w-2xl">
+    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-col md:flex-row items-start md:items-center
+                justify-between pb-4 border-b border-bl">
+        <div>
+            <h4 th:text="${title}"  class="text-2xl font-bold leading-tight text-gray-800"></h4>
+        </div>
+        <div th:if="${buttonEnable}">
+            <a th:href="@{${link}}" th:text="#{view.customer.registration.button}"
+               class= "transition hover:bg-gray-600 bg-gray-800 rounded
+               text-white px-8 py-2 font-semibold text-sm" ></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
